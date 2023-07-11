@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+      button : click 이벤트 타입 ==> onclink (이벤트 핸들러: 연결만 해주는 핸들러이기 때문에 이벤트 타입인 click과는 완전히 다른 개념임)
+      form태그의 submit : submit 이벤트 타입 ==> onsubmit (**중요)
+      input(text 등) : focus, keyup 이벤트 타입 ==> onkeyup
+      select : change 이벤트 타입 ==> onchange
+      img :mouseover, mouseout 이벤트 타입 ==> onmouseover, onmouseout
+     
+      // 시스템이 호출
+      body : load 이벤트 (DOM tree가 완성될 때 발생) ==> onload
+    */
+     
+     function fun(){       
+      console.log("fun");  
+     }
+
+  </script>
+</head>
+<body onload="fun()">
+ 
+
+</body>
+</html>

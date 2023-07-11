@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    // 실행문 > 반복문 > for문 (반복횟수를 쉽게 예측 가능할 때 사용)
+    /* for(시작값; 조건식; 증감식){
+      문장1;
+      문장2;
+    } */
+    
+    // 1. break 문
+    for(var n=1; n<6; n++){
+      if(n==3) break;
+      console.log("hello");
+    }
+
+
+    // 2. continue 문
+    for(var n=1; n<6; n++){
+      console.log("world1", n);
+      if(n==3)continue;          //n이 3일 때는 world2, world3을 건너뜀
+      console.log("world2", n);
+      console.log("world3", n);
+    }
+
+    
+
+  </script>
+    
+  </head>
+<body>
+
+  <p>안녕하세요</p>
+
+</body>
+</html>

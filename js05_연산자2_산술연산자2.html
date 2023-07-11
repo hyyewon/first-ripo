@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    // 연산자 2 - 산술 연산자
+    // 문자열 vs 수치 ==> +는 연결로 처리 / 나머지는 연산됨
+
+    var n="10";
+    var n2 =3;
+    console.log(n-n2);  // 7
+    console.log(n*n2);  // 30
+    console.log(n/n2);  // 3.3333333
+    console.log(n%n2);  // 1
+
+    console.log(n+n2);  // 103 ==> 연결
+
+    connect = n+n2;
+    console.log(connect, typeof connect); // + ==> 연결되어 문자열로 반환
+
+    // 문자열 vs 문자열
+    var x = "hello" + "world";
+    var x2 = "hello" + 10 + 20;
+    var x3 = 10+20+"hello";
+
+    console.log(x,x2,x3);
+
+    // 문자열 형태의 정수 "10" 를 진짜 정수로 바꿔주기
+    console.log("10"+3);  // 103
+    console.log(Number.parseInt("10")+3)  // 13
+
+    var num = Number.parseInt("10");
+    console.log(num+3);  // 13
+
+    console.log(parseInt("10")+3) //13
+
+    console.log(Number.parseInt("A"));  // NaN (숫자가 아니라는 뜻)
+
+  </script>
+    
+  </head>
+<body>
+
+  <p>안녕하세요</p>
+
+</body>
+</html>

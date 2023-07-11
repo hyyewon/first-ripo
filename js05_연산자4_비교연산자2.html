@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    // 연산자 4 - 비교 연산자 => 실행결과는 논리값
+
+    console.log("10" == 10);
+    console.log("10" === 10); // identical 연산자(==) 값과 데이터형 모두 비교하여 두 가지 모두 일치하는 경우에만 true 도출
+
+    // undefiend 비교는 === 사용
+    var n;
+
+    console.log("equal:", n==undefined);  //true
+    console.log("identical:", n===undefined);  //true
+
+    var n=null;
+
+    console.log("equal(null):", n==undefined);  //true
+    console.log("identical(null):", n===undefined);  //false -- 변수의 값이 null로 값이 지정되지 않았음을 표현하는 undefined 와는 다름
+
+
+
+  </script>
+    
+  </head>
+<body>
+
+  <p>안녕하세요</p>
+
+</body>
+</html>

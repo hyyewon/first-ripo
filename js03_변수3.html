@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    // 변수의 스코프(scope) ==> 변수를 인식할 수 있는 범위
+    // 범위 밖에서는 안에 내용이 확인 안되므로 error 발생
+
+    // 블럭 {} 가진 요소들 : 함수 , if문 , 반복문 , 클래스 등
+
+    //1. 함수가 아닌 블럭
+
+    if(true){
+      var n = 10;
+      let n2 = 20;
+      console.log(n , n2)
+    }
+    console.log(n)   //var은 인식가능
+    // console.log(n2)  //let은 인식불가능
+
+    //2. 함수인 블럭
+
+    function fun(){
+      var x = 100;
+      let x2 = 200;
+      console.log(x);
+      console.log(x2);
+    }
+      fun()   //함수호출 : 함수는 반드시 호출을 해줘야 함
+      // console.log(x);  -- 에러발생
+      // console.log(x2);  -- 에러발생
+
+      // var 변수는 중복 선언 가능
+      var n = 10;
+      var n = 20;
+
+      // let 변수는 중복 선언 불가능
+      // let z = 10;
+      // let z = 20;
+
+  </script>
+    
+  </head>
+<body>
+
+  <p>안녕하세요</p>
+
+</body>
+</html>

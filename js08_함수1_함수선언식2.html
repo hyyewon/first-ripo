@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 함수 (function)
+    
+    // 가. default 파라미터: undefined 방지 ==> 함수를 선언할 때 초기값 저장
+    function fun2(n=1, n2=2){
+      console.log(n, n2);
+    }
+    
+    fun2(1, "hi"); // 1 hi
+    fun2();  // 1 2
+    fun2(10); // 10 2
+
+    // 나. 가변인자 (...변수) ==> 배열로 처리됨
+    function fun3(n, n2, ...n3){
+      console.log(n, n2, n3);
+    }
+    fun3(10,20,30);  // 10 20 [30]
+    fun3(10,20,30,40,50);  // 10 20 [30, 40, 50]
+
+    // 다. 혼합 (default 파라미터 + 가변인자)
+    function fun4(n, n2=0, ...n3){
+      console.log(n, n2, n3);
+    }
+    fun4(10); // 10 0 []
+    fun4(10,20,30);  // 10 20 [30] 
+    fun4(10,20,30,40,50);  // 10 20 [30, 40, 50]
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

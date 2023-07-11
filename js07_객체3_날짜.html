@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //Date 객체 :
+
+    //1. 생성방법
+
+    //날짜 얻어오기
+    var d = new Date();
+    console.log(d); // Tue Jul 04 2023 13:21:06 GMT+0900 (한국 표준시)
+    console.dir(d);
+
+    console.log("년도:", d.getFullYear());
+    console.log("월:", d.getMonth() +1 ); //0~11범위로 관리가 되므로 +1
+    console.log("일:", d.getDate());
+
+    //날짜 변경
+    var d2 = new Date();
+    d2.setFullYear(2023);  // 가장 행복했던 년도
+    d2.setMonth(7);
+    d2.setDate(4);
+    console.log(d2);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

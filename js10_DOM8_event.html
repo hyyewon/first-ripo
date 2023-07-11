@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+     //DOM level 0 의 고전 방식으로 이벤트 처리
+     //아직 만들어지지 않은 아이디에 접근 -> 결과값 null 도출
+     //onload -> 화면을 켬과 동시에 동작이 필요할 때 사용
+     //onload -> DOM트리가 완성되었을 때 해당 함수를 불러와서 DOM트리가 완성되었음을 알 수 있음
+     
+
+     // document.querySelector(선택자).onXXX=익명함수;
+     
+     function init(){
+      var s = document.querySelector("#chk").onclick=function(){
+      var p = document.getElementById("xxx");
+      var p = document.querySelector("#xxx");
+      p.innerText="world";
+      p.innerHTML="<h1>world</h1>"
+       }; 
+      
+     }
+
+  </script>
+
+</head>
+<body onload="init()">  <!--DOM트리가 다 완성된다음 접근하기 위해-->
+  <p id="xxx"><span>Hello</span></p>
+  <button id="chk">변경</button>
+  
+</body>
+</html>

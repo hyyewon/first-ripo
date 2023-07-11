@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 함수 (function)
+    
+    // 함수 표현식 :default 파라미터와 가변인자 사용 가능
+    var fun = function(n1=1, n2=2, ...n3){
+      console.log("함수표현식:", n1, n2, n3);
+    }
+    fun(10);   // 10 2 []
+    fun(10, 20, 30);    // 10 20 [30]
+    fun(10, 30, 40, 50); // 10 30 (2) [40, 50]
+    
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

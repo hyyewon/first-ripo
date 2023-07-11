@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    // 상수 (constant)
+    const num=10;  // 기본형
+    console.log(num);  
+        // num = 20;  // 값 변경 불가하므로 값을 변경하려면 초기화해야 함
+
+    const num2=[10,20];  // 참조형
+    console.log(num2);
+    // num2 = [20,30];   // 에러 발생
+    
+    num2[1]=30;  // 참조형의 경우 주소값은 변경 불가능하지만 참조된 실제값은 변경가능
+    console.log(num2);
+
+    if(true){
+      const x=20;
+      // const x=30; // 중복선언 불가
+      console.log(x);
+    }
+    // console.log(x);  // 에러 발생 - block scope
+
+
+  </script>
+    
+  </head>
+<body>
+
+  <p>안녕하세요</p>
+
+</body>
+</html>

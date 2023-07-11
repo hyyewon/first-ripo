@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+    function img_change(){
+      var image = document.querySelector("#img");
+      console.dir(img);
+      image.src="images/bg.jpg";
+      image.width = "500";
+      image.height = "500";
+
+    }
+    
+  </script>
+
+</head>
+<body>
+  <img id="img" src="images/001.png" width="100" height="100">
+  <button onclick="img_change()">이미지 변경</button>
+</body>
+</html>

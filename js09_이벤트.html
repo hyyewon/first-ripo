@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+      button : click 이벤트 타입 ==> onclink (이벤트 핸들러: 연결만 해주는 핸들러이기 때문에 이벤트 타입인 click과는 완전히 다른 개념임)
+      form태그의 submit : submit 이벤트 타입 ==> onsubmit (**중요)
+      input(text 등) : focus, keyup 이벤트 타입 ==> onkeyup
+      select : change 이벤트 타입 ==> onchange
+      img :mouseover, mouseout 이벤트 타입 ==> onmouseover, onmouseout
+    */
+     
+     function fun(){       // 이벤트시 처리되는 함수
+      console.log("fun"); 
+     }
+
+    
+
+  </script>
+</head>
+<body>
+  <!-- 이벤트 소스 -->
+  <button onclick="fun()">OK</button>   
+  <input type="text" onkeyup="fun()" onfocus="fun()">
+
+
+  <label for="cars">Choose a car:</label>
+<select id="cars" name="cars" onchange="fun()">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select><br>
+
+<input onclick="fun()" type="checkbox" name="fruits" value="사과">사과
+<input type="checkbox" name="fruits" value="메론">메론
+<input type="checkbox" name="fruits" value="바나나">바나나<br>
+
+<img src="images/001.png" width="100" height="100" onmouseover="fun()" onmouseout="fun()">
+
+
+
+</body>
+</html>

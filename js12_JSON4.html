@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // "JSON" --> JSON
+        var str = "[10,20,30]";
+        var json = JSON.parse(str);
+        console.log(typeof str, typeof json); //string object
+        console.log(json[0], json[1]); // 변환을 해야만 인덱스로 접근 가능
+
+        // JSON --> "JSON"
+        var json = [10,20,30];
+        var str = JSON.stringify(json);
+        console.log(typeof json, typeof str); //object string
+        
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

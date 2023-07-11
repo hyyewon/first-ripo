@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+     //DOM level 0 의 고전 방식으로 이벤트 처리
+     //아직 만들어지지 않은 아이디에 접근 -> 결과값 null 도출
+     //onload -> 화면을 켬과 동시에 동작이 필요할 때 사용
+
+     // document.querySelector(선택자).onXXX=익명함수;
+     
+     var xxx = function(){
+      console.log("button");
+       }; 
+
+     function init(){
+      var s = document.querySelector("#chk").onclick=xxx;  //함수이름만 알려줬더니 실행됨 => 버튼을 누를때 시스템이 호출하는 콜백함수로 처리했다는 것을 의미
+      
+     }
+
+  </script>
+
+</head>
+<body onload="init()">
+  <button id="chk">변경</button>
+  
+</body>
+</html>

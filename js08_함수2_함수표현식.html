@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 함수 (function)
+    
+    // 함수 선언식 : 함수 선언식도 내부적으로는 함수 표현식으로 만듦.
+    function fun()
+      {console.log("함수선언식: fun");
+    }
+    fun();  // 함수선언식: fun
+    console.log(fun); // 함수명만 사용 ==> 콜백함수 주로 사용
+    /* ƒ fun()
+      {console.log("함수선언식: fun");
+    } */
+
+    // 함수 표현식
+    var fun = function(){
+      console.log("함수표현식: fun");
+    }
+    fun(); // 함수 호출하면서 사용 // 함수표현식: fun
+    console.log(fun); // 함수명만 사용
+
+    ///////////////////////////////////////////////////////////
+
+    var fun2 = function (n, n2){
+      console.log(n, n2);
+    }
+    fun2(1,"hi");  // 1 'hi'
+    console.log(fun2);
+
+    var fun4 = function(n, n2){
+      console.log("fun4", n, n2);
+      return n+n2;
+    }
+    var result = fun4(2,4);  // fun4 2 4
+    console.log(result);   // 6
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

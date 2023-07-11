@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+      // head태그 안에서 태그에 접근할 때에는 일반적으로 함수 안에서 접근 'onload'-->dom이 만들어진 시점을 알기 위해
+    function init(){
+      var p = document.querySelector("p");
+      console.dir(p);
+      
+      //값 얻기
+      console.log(p.innerHTML);
+      console.log(p.innerText);
+
+      //값 변경
+      p.innerText="world";
+      p.innerHTML="<h1>world</h1>";
+    }
+  </script>
+
+</head>
+<body onload="init()">
+  <p><span>Hello</span></p>
+  
+</body>
+</html>
